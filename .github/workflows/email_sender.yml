@@ -22,7 +22,7 @@ jobs:
                 # pip install smtplib email
             
             - name: "Send mail by executing python script"
-              run: python script.py 
+              run: python email_scripts.py 
               env: 
                 WORKFLOW_NAME: ${{ github.workflow }}
                 REPO_NAME: ${{ github.repository }}
